@@ -1,0 +1,35 @@
+<div *ngIf="film">
+  <div class="row">
+    <div class="col-xs-12">
+      <h1>{{ film.title }}</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Episode: {{ film.episode_id }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      {{ film.opening_crawl }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Director: {{ film.director }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Producer: {{ film.producer }}
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12">
+      Release Date: {{ film.release_date }}
+    </div>
+  </div>
+  <div class="row" *ngFor="let detail of details">
+    <app-film-detail-item [objects]="film[detail]" [detail]="detail"></app-film-detail-item>
+  </div>
+</div>

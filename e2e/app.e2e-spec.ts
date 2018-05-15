@@ -1,6 +1,6 @@
 import { AppPage } from './app.po';
 
-describe('prj-start App', () => {
+describe('star-wars App', () => {
   let page: AppPage;
 
   beforeEach(() => {

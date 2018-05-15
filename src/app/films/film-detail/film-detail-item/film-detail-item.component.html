@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item">
+        List {{ detail }}: <br>
+        <span *ngFor="let object of objects; let i = index">
+          {{ i+1 }}. {{ object.name }} <br>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>
